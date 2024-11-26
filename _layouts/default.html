@@ -9,25 +9,7 @@
 	<body class="is-preload">
 		
 
-		<!-- Header -->
-			<header id="header">
-				<div id="languageselector">
-					<ul class="nav">
-						<li><a href="{{ site.baseurl }}/fr">Français</a></li>
-						<li><a href="{{ site.baseurl }}/en">English</a></li>
-					</ul>
-				</div>
-				<div class="content">
-					<h1>{{ site.title }}</h1>
-					<p>Small household works, decorating<br>and garden maintenance<br>in and around Le Faouët</p>
-					<ul class="actions">
-						<!--<li><a href="#" class="button primary icon solid fa-download">Download</a></li>-->
-						<li><a href="#one" class="button icon solid fa-chevron-down scrolly">Find out more</a></li>
-						<li><a href="#four" class="button primary icon solid fa-envelope scrolly">Contact me</a></li>
-					</ul>
-				</div>
-				<div class="image phone"><div class="inner"><img src="{{ site.baseurl }}/images/IMG_20220115_111928_1.jpg" alt="Sarah carrying wood" /></div></div>
-			</header>
+		{% include header.html %}
 
 		<!-- One -->
 			<section id="one" class="wrapper style2 special">
@@ -83,25 +65,26 @@
 			</section>
 		<!-- Three -->
 			<section id="three" class="wrapper style2 special">
+				<div class="inner alt">
 				<header class="major">
 					<h2>Experience</h2>
 					<p>I ran a successful local gardening business whilst in the UK, led the four year project to renovate our old farmhouse near Le Faouët, and have provided handywoman services across the area since 2022.</p>
 					
 				</header>
-				<ul class="actions special">
-					<li><a href="#four" class="button icon solid fa-envelope scrolly">Contact</a></li>
-				</ul>
+				
+			</div>
 			</section>
 
 			<section id="four" class="wrapper">
+				<div class="inner alt">
 				<header class="major">
 					<h2>Contact me</h2>
 					<p>Devis available on request</p>
 					<ul class="actions special">
 						<li><a href='tel:+33766372650' class="button icon solid fa-phone">+33 (0)7 66 37 26 50</a></li>
-						<li><a href="mailto:sarah@berthelemy.net" class="button icon solid fa-envelope">sarah@berthelemy.net</a></li>
+						<li><a href="mailto:sarah.berthelemy@gmail.com" class="button icon solid fa-envelope">sarah.berthelemy@gmail.com</a></li>
 					</ul>
-					<p>SIRET: 0000123456789</p>
+					<p>SIREN: <a href="https://data.inpi.fr/entreprises/848270849" target="_blank">848 270 849</a></p>
 					
 					
 				</header>
@@ -146,32 +129,13 @@
 						</form>
 					</section>
 				</div>-->
+			</div>
 		</section>
 
 
-		<!-- Footer -->
-			<footer id="footer">
-				<!--<ul class="icons">
-					<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-				</ul>-->
-				
-				<p class="copyright">&copy; <script type="text/javascript">
-  document.write(new Date().getFullYear());
-					</script> Sarah Berthelemy.</p>
-				<p class="copyright">Conception: <a href="http://html5up.net">HTML5 UP</a> | Implémentation: <a href="https://faouetinformatique.net">Faouët Informatique</a></p>
-				<div id="wcb" class="carbonbadge wcb"></div>
-				<script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
-			</footer>
+{% include footer.html %}
 
-		<!-- Scripts -->
-			<script src="https://kit.fontawesome.com/22cfb82c4b.js" crossorigin="anonymous"></script>
-			<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
-			<script src="{{ site.baseurl }}/assets/js/jquery.scrolly.min.js"></script>
-			<script src="{{ site.baseurl }}/assets/js/browser.min.js"></script>
-			<script src="{{ site.baseurl }}/assets/js/breakpoints.min.js"></script>
-			<script src="{{ site.baseurl }}/assets/js/util.js"></script>
-			<script src="{{ site.baseurl }}/assets/js/main.js"></script>
-			<script src="{{ site.baseurl }}/assets/js/mbscripts.js"></script>
+{% include scripts.html %}
 
 	</body>
 </html>

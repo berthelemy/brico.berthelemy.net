@@ -24,13 +24,13 @@ email: your-email@example.com
 
 title: Sarah Berthelemy
 description: Small household works, decorating and garden maintenance in and around Le Faouët, Le Saint, Guiscriff, Scaer, Gourin, Lanvenegen, Querrien and Priziac  
-url: https://berthelemy.github.io
-baseurl: /brico.berthelemy.net
+url: http://127.0.0.1:4000
+baseurl: 
 
 
 
 # Build settings
-theme: minima
+theme: 
 plugins:
   - jekyll-feed
 
