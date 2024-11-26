@@ -1,0 +1,31 @@
+#header {
+	background-color: #66894a;
+	color: #edfaee;
+}
+
+#header .button.primary {
+	color:#66894a !important;
+}
+
+#header p {
+	margin-left:auto;
+}
+
+/*.image.phone:before, .image.phone:after {
+				content: none;
+			}
+
+.image.phone {
+	margin-right: 3em;
+}
+*/
+
+p.caption {
+	font-size: 0.8em;
+}
+
+/*#header {
+	background-image: none;
+}
+*/
+
