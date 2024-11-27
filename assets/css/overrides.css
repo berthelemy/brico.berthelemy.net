@@ -38,8 +38,16 @@ div#languageselector {
    	bottom: 0px;
    	z-index: 9999;
 	width: 100%;
-	background-color: #fff;
-	border-top: 1px solid #eee;
+	background-color: #66894a;
+	
+}
+
+div#languageselector a {
+	color: #fff;
+}
+
+div#languageselector a:hover {
+	color: #ddd;
 }
 
 ul.nav {
@@ -72,3 +80,10 @@ p.caption {
 }
 */
 
+ul.icons {
+	font-size: 2rem;
+}
+
+ul.icons span.label {
+	display: none;
+}
