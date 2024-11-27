@@ -23,7 +23,7 @@ if (path == '/en' || path == '/fr') { // Do we need to change the language?
     };
     var rootUrl = '{{ site.url }}'; // Pick up root URL from config.yml
 
-    var newUrl = rootUrl + urls[userLang] ?? rootUrl;
+    var newUrl = urls[userLang] ?? rootUrl;
     console.log("NewURL: ", newUrl);
 
     console.log("CurrentURL: ", currentUrl);
