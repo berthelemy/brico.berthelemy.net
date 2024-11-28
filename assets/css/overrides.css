@@ -25,6 +25,10 @@ h1, h2, h3, h4, h5, h6 {
 	height: 100vh;
 }
 
+header.major p {
+	text-align: left;
+}
+
 #header .button.primary {
 	color:#66894a !important;
 }
@@ -91,4 +95,11 @@ ul.icons {
 
 ul.icons span.label {
 	display: none;
+}
+
+
+@media screen and (max-width: 736px) {
+    header.major p {
+        text-align: center;
+    }
 }
