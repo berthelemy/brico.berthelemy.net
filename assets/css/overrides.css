@@ -22,6 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 #header {
 	background-color: #66894a;
 	color: #edfaee;
+	height: 100vh;
 }
 
 #header .button.primary {
@@ -40,6 +41,10 @@ div#languageselector {
 	width: 100%;
 	background-color: #66894a;
 	
+}
+
+div#languageselector ul {
+	margin-bottom: 1rem;
 }
 
 div#languageselector a {
