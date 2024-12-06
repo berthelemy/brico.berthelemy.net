@@ -10,6 +10,10 @@ h1, h2, h3, h4, h5, h6 {
 	color: #111;
 }
 
+.wrapper > .inner.alt > * {
+	margin-bottom: 1em;
+}
+
 .wrapper.style2 h1, .wrapper.style2 h2, .wrapper.style2 h3, .wrapper.style2 h4, .wrapper.style2 h5, .wrapper.style2 h6
  {
 	color: #222;
@@ -80,8 +84,20 @@ ul.nav li {
 }
 */
 
+p.major {
+	font-size: 1.25em;
+}
+
 p.caption {
 	font-size: 0.8em;
+}
+
+header.major p.centred {
+	text-align: center;
+}
+
+header.major:after {
+	border-bottom: none;
 }
 
 /*#header {
@@ -97,9 +113,16 @@ ul.icons span.label {
 	display: none;
 }
 
+.image.phone:before, .image.phone:after {
+	content: none;
+}
+
 
 @media screen and (max-width: 736px) {
     header.major p {
         text-align: center;
     }
+	p.major {
+		font-size: 1em;
+	}
 }
